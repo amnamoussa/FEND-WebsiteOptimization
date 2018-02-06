@@ -52,7 +52,7 @@ The optimization that has made in this project includes:
 * `print.css` has merged with `style.css` to reduce file requests
 * Image file sizes have reduced
 * Added the text description `alt` in `<img>`
-* added `<\div>` to solve the error of missing closing tag
+* added `</div>` to solve the error of missing closing tag
 #### perfmatters.js
 * File minified
 #### view/main.js
