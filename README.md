@@ -28,19 +28,19 @@ You can find the initial project commit [here](https://github.com/udacity/fronte
   $> ./ngrok http 8080
   ```
 
-1. Copy the public URL ngrok gives you and try running it through [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)! Optional: [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
+1. Copy the public URL ngrok gives you and try running it through [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)! Optional: [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/).
 
 ##### If you would like to run it by your own server:
-1. Check out the repository
-1. Upload all files in your server
-1. Open the **index.html** file in any browser
-1. Copy this live link
-1. To check the **optimization**, paste the link in [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/)
+1. Check out the repository.
+1. Upload all files in your server.
+1. Open the **index.html** file in any browser.
+1. Copy this live link.
+1. To check the **optimization**, paste the link in [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/).
 
 #### Part 2: Inspect Optimization of the Frames per Second in pizza.html
 
-1. Check the same steps as in Part 1
-1. To inspect the **frame rate at 60fps or higher** and the **computational efficiency of resizing the pizza is less than 5ms**, open the console and performance tabs in DevTools in the browser
+1. Check the same steps as in Part 1.
+1. To inspect the **frame rate at 60fps or higher** and the **computational efficiency of resizing the pizza is less than 5ms**, open the console and performance tabs in DevTools in the browser.
 
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
@@ -48,16 +48,16 @@ You might find the FPS Counter/HUD Display useful in Chrome developer tools desc
 The optimization that has made in this project includes:
 
 #### General HTML files include index.html
-* Extra font has removed
-* `print.css` has merged with `style.css` to reduce file requests
-* Image file sizes have reduced
-* Added the text description `alt` in `<img>`
-* added `</div>` to solve the error of missing closing tag
+* Extra font has removed.
+* `print.css` has merged with `style.css` to reduce file requests.
+* Image file sizes have reduced.
+* Added the text description `alt` in `<img>`.
+* added `</div>` to solve the error of missing closing tag.
 #### perfmatters.js
-* File minified
+* File minified.
 #### view/main.js
-* `switch` statement in `changePizzaSizes` function to simplify which width has been chosen every case, and a `for loop` to set the width for every element to resize the pizza in less than 5ms
-* The line of `document.documentElement.scrollTop` has been deleted, and the usage of scrollTop has been changed with `i` in the `for` loop to generate some consistent pizzas across the screen with frame-rate at 60ps
+* `switch` statement in `changePizzaSizes` function to simplify which width has been chosen every case, and a `for loop` to set the width for every element to resize the pizza in less than 5ms.
+* The line of `document.documentElement.scrollTop` has been deleted, and the usage of scrollTop has been changed with `i` in the `for` loop to generate some consistent pizzas across the screen with frame-rate at 60ps.
 
 ### Optimization Tips and Tricks
 * [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
