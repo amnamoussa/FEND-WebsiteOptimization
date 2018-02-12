@@ -50,14 +50,16 @@ The optimization that has made in this project includes:
 #### General HTML files include index.html
 * Extra font has removed.
 * `print.css` has merged with `style.css` to reduce file requests.
+* `style.css` has been minified and including it in `<style>` tag in index.html.
 * Image file sizes have reduced.
 * Added the text description `alt` in `<img>`.
-* added `</div>` to solve the error of missing closing tag.
+* Added `</div>` to solve the error of missing closing tag.
 #### perfmatters.js
 * File minified.
 #### view/main.js
 * `switch` statement in `changePizzaSizes` function to simplify which width has been chosen every case, and a `for loop` to set the width for every element to resize the pizza in less than 5ms.
-* The line of `document.documentElement.scrollTop` has been deleted, and the usage of scrollTop has been changed with `i` in the `for` loop to generate some consistent pizzas across the screen with frame-rate at 60ps.
+* Place the line of `document.documentElement.scrollTop` before the for loop, to generate some consistent pizzas across the screen with frame-rate at 60ps.
+* Calculate the number of pizzas needed based on window sizes.
 
 ### Optimization Tips and Tricks
 * [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
